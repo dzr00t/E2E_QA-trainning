@@ -1,0 +1,17 @@
+--suite Tests.E2E labQA
+--variable CALLER_ID:a1bc446e05dc4654bf0e304bd2ab5514
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:8
+--variable PABOTQUEUEINDEX:1
+--variable PABOTLASTLEVEL:Tests.E2E labQA.PABOT_noend
+--argumentfile ./firefox.txt
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\2\1
+--consolecolors off
+--consolemarkers off
+tests

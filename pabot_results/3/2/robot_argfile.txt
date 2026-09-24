@@ -1,0 +1,17 @@
+--suite Tests.E2E labQA
+--variable CALLER_ID:7d7e741dfbef4dc19942851185b982be
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:8
+--variable PABOTQUEUEINDEX:2
+--variable PABOTLASTLEVEL:Tests.E2E labQA
+--argumentfile ./edge.txt
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\3\2
+--consolecolors off
+--consolemarkers off
+tests

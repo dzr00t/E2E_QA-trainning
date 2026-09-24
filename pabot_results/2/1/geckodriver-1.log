@@ -1,0 +1,30 @@
+1790255205253	geckodriver	INFO	Listening on 127.0.0.1:60833
+1790255209246	mozrunner::runner	INFO	Running command: "C:\\Users\\Utilisateur\\.cache\\selenium\\firefox\\win64\\156.0.1\\firefox.exe" "--marionette" "--remote-de ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\UTILIS~1\\AppData\\Local\\Temp\\rust_mozprofileIKNGdx"
+Dynamically enable window occlusion 0
+1790255218755	Marionette	INFO	Marionette enabled
+1790255220400	Marionette	INFO	Listening on port 61866
+Read port: 61866
+WebDriver BiDi listening on ws://127.0.0.1:60834
+1790255221330	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Calling WaitFlushedEvent::Run: is delayed: 3534
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+[ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: "Erreur non spécifiée" }
+[ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: "Erreur non spécifiée" }
+[ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: "Erreur non spécifiée" }
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+console.error: "Experiment private-window-visual-refresh-design-change-only has unknown featureId: feltPrivacy"
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ssid-testing-agency.github.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ssid-testing-agency.github.io."
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+console.error: "Experiment private-window-visual-refresh-design-change-only has unknown featureId: feltPrivacy"
+[ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: "Erreur non spécifiée" }
+1790255271829	Marionette	INFO	Stopped listening on port 61866
+console.error: (new Error("IndexedDB: main/url-classifier-skip-urls getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+console.error: "failed to cleanup Glean crash pings: Error: Phase \"profile-before-change\" is finished, it is too late to register completion condition \"CrashManager: killing ping cleanup process\""
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+Dynamically enable window occlusion 1
+[WARN  glean_core::upload] Attempted to enqueue a duplicate ping b87a9760-9d29-409c-923a-cd03c7bd06ec at /submit/firefox-crashreporter/deletion-request/1/b87a9760-9d29-409c-923a-cd03c7bd06ec.

@@ -1,0 +1,17 @@
+--suite Tests.E2E labQA
+--variable CALLER_ID:1c0dcb1b515545f283a0cbb15f96299c
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:2
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:8
+--variable PABOTQUEUEINDEX:0
+--variable PABOTLASTLEVEL:Tests.E2E labQA.PABOT_noend
+--argumentfile ./chrome.txt
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\1\0
+--consolecolors off
+--consolemarkers off
+tests

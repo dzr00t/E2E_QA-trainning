@@ -1,0 +1,17 @@
+--suite Tests.Loginwithjdd
+--variable CALLER_ID:966133e5969442819e201ccfc8d5a9f8
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:3
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:8
+--variable PABOTQUEUEINDEX:5
+--variable PABOTLASTLEVEL:
+--argumentfile ./edge.txt
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\3\5
+--consolecolors off
+--consolemarkers off
+tests

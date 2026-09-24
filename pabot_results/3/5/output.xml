@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-24T15:06:32.692868" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Utilisateur\Desktop\Formation Qa\Rebot framwork\E2E_labQA\tests">
+<suite id="s1-s1" name="Loginwithjdd" source="C:\Users\Utilisateur\Desktop\Formation Qa\Rebot framwork\E2E_labQA\tests\loginwithjdd.robot">
+<test id="s1-s1-t1" name="login valide" line="14">
+<kw name="init Navigateur" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:06:35.486514" level="INFO">Opening browser 'edge' to base url 'https://ssid-testing-agency.github.io/Lab.qa/#/login'.</msg>
+<arg>${URL}</arg>
+<arg>${nav}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-24T15:06:35.485166" elapsed="6.331052"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-09-24T15:06:41.817411" elapsed="0.070998"/>
+</kw>
+<status status="PASS" start="2026-09-24T15:06:35.480303" elapsed="6.408668"/>
+</kw>
+<kw name="data driven test" owner="keywords">
+<kw name="Se connecter" owner="loginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:06:41.897112" level="INFO">Typing text 'jean_dupont' into text field 'id=username'.</msg>
+<arg>${l_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-24T15:06:41.894877" elapsed="2.268699"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:06:44.166244" level="INFO">Typing text 'Baguette42!' into text field 'id=password'.</msg>
+<arg>${l_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-24T15:06:44.164588" elapsed="2.145263"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:06:46.312065" level="INFO">Clicking button 'css=[data-testid="login-submit"]'.</msg>
+<arg>${l_btn_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-24T15:06:46.310763" elapsed="3.631091"/>
+</kw>
+<arg>${user-name}</arg>
+<arg>${pass-word}</arg>
+<status status="PASS" start="2026-09-24T15:06:41.892881" elapsed="8.049628"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${result}&quot; == &quot;OK&quot;">
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:06:52.360725" level="INFO">Current location contains '/catalog'.</msg>
+<arg>/catalog</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-09-24T15:06:49.944720" elapsed="2.416489"/>
+</kw>
+<status status="PASS" start="2026-09-24T15:06:49.943298" elapsed="2.418309"/>
+</branch>
+<branch type="ELSE">
+<kw name="get mssg error" owner="loginPage">
+<var>${mssg}</var>
+<status status="NOT RUN" start="2026-09-24T15:06:52.364148" elapsed="0.000314"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${mssg}</arg>
+<arg>ne correspondent à aucun utilisateur de ce service</arg>
+<doc>Fails if the `container` does not contain the `item` one or more times.</doc>
+<status status="NOT RUN" start="2026-09-24T15:06:52.365748" elapsed="0.000240"/>
+</kw>
+<status status="NOT RUN" start="2026-09-24T15:06:52.361949" elapsed="0.004401"/>
+</branch>
+<status status="PASS" start="2026-09-24T15:06:49.943137" elapsed="2.423627"/>
+</if>
+<arg>jean_dupont</arg>
+<arg>Baguette42!</arg>
+<arg>OK</arg>
+<status status="PASS" start="2026-09-24T15:06:41.890700" elapsed="10.476649"/>
+</kw>
+<kw name="fermer Navigateur" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-24T15:06:52.370861" elapsed="62.566792"/>
+</kw>
+<status status="PASS" start="2026-09-24T15:06:52.368795" elapsed="62.569420"/>
+</kw>
+<status status="PASS" start="2026-09-24T15:06:35.476514" elapsed="79.462053"/>
+</test>
+<test id="s1-s1-t2" name="login invalide" line="15">
+<kw name="init Navigateur" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:07:54.946548" level="INFO">Opening browser 'edge' to base url 'https://ssid-testing-agency.github.io/Lab.qa/#/login'.</msg>
+<arg>${URL}</arg>
+<arg>${nav}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-24T15:07:54.945385" elapsed="5.855632"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-09-24T15:08:00.802274" elapsed="0.037901"/>
+</kw>
+<status status="PASS" start="2026-09-24T15:07:54.942601" elapsed="5.907837"/>
+</kw>
+<kw name="data driven test" owner="keywords">
+<kw name="Se connecter" owner="loginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:08:00.877597" level="INFO">Typing text 'FAKE' into text field 'id=username'.</msg>
+<arg>${l_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-24T15:08:00.874136" elapsed="0.634735"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:08:01.515420" level="INFO">Typing text 'FAKE' into text field 'id=password'.</msg>
+<arg>${l_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-24T15:08:01.509895" elapsed="0.593237"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:08:02.106716" level="INFO">Clicking button 'css=[data-testid="login-submit"]'.</msg>
+<arg>${l_btn_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-24T15:08:02.104890" elapsed="0.370975"/>
+</kw>
+<arg>${user-name}</arg>
+<arg>${pass-word}</arg>
+<status status="PASS" start="2026-09-24T15:08:00.866314" elapsed="1.610065"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${result}&quot; == &quot;OK&quot;">
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>/catalog</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-09-24T15:08:02.478042" elapsed="0.000276"/>
+</kw>
+<status status="NOT RUN" start="2026-09-24T15:08:02.476939" elapsed="0.001704"/>
+</branch>
+<branch type="ELSE">
+<kw name="get mssg error" owner="loginPage">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-09-24T15:08:02.585122" level="INFO">${mssg} = Le nom d'utilisateur et le mot de passe ne correspondent à aucun utilisateur de ce service</msg>
+<var>${mssg}</var>
+<arg>${login-error}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-24T15:08:02.483064" elapsed="0.102676"/>
+</kw>
+<return>
+<value>${mssg}</value>
+<status status="PASS" start="2026-09-24T15:08:02.586366" elapsed="0.000781"/>
+</return>
+<msg time="2026-09-24T15:08:02.589192" level="INFO">${mssg} = Le nom d'utilisateur et le mot de passe ne correspondent à aucun utilisateur de ce service</msg>
+<var>${mssg}</var>
+<status status="PASS" start="2026-09-24T15:08:02.480160" elapsed="0.109225"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${mssg}</arg>
+<arg>ne correspondent à aucun utilisateur de ce service</arg>
+<doc>Fails if the `container` does not contain the `item` one or more times.</doc>
+<status status="PASS" start="2026-09-24T15:08:02.590940" elapsed="0.008547"/>
+</kw>
+<status status="PASS" start="2026-09-24T15:08:02.479010" elapsed="0.120947"/>
+</branch>
+<status status="PASS" start="2026-09-24T15:08:02.476797" elapsed="0.123974"/>
+</if>
+<arg>FAKE</arg>
+<arg>FAKE</arg>
+<arg>KO</arg>
+<status status="PASS" start="2026-09-24T15:08:00.855451" elapsed="1.746116"/>
+</kw>
+<kw name="fermer Navigateur" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-24T15:08:02.623026" elapsed="4.300718"/>
+</kw>
+<status status="PASS" start="2026-09-24T15:08:02.617416" elapsed="4.306808"/>
+</kw>
+<status status="PASS" start="2026-09-24T15:07:54.940310" elapsed="11.984215"/>
+</test>
+<doc>teste login avec des idf valid et non valide du site web https://ssid-testing-agency.github.io/Lab.qa/#/login</doc>
+<status status="PASS" start="2026-09-24T15:06:33.009931" elapsed="93.962750"/>
+</suite>
+<status status="PASS" start="2026-09-24T15:06:32.702128" elapsed="94.319697"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="Loginwithjdd" id="s1-s1" pass="2" fail="0" skip="0">Tests.Loginwithjdd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
