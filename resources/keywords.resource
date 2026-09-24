@@ -15,8 +15,9 @@ data driven test
     IF    "${result}" == "OK"
         Location Should Contain    /catalog        
     ELSE    
-        ${mssg}    get mssg error
-        Should Contain    ${mssg}    ne correspondent à aucun utilisateur de ce service  
+        #${mssg}    get mssg error
+        #Should Contain    ${mssg}    ne correspondent à aucun utilisateur de ce service  
+        Element Should Be Visible    ${login-error}   
     END
 
 

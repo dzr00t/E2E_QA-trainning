@@ -1,0 +1,5 @@
+*** Test Cases ***,${user-name},${pass-word},${result}  
+valide1,jean_dupont,Baguette42!,OK
+invalid,compte_banni,Baguette42!,KO
+valide2,client_chaos,Baguette42!,OK
+valide3,tortue_du_web,Baguette42!,OK
